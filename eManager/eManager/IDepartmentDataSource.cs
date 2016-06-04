@@ -2,7 +2,7 @@ using System.Linq;
 
 namespace eManager
 {
-    interface IDepartmentDataSource
+    public interface IDepartmentDataSource
     {
         IQueryable<Employee> Employees { get; }
 

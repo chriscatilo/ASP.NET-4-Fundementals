@@ -5,3 +5,4 @@
 *.suo
 /eManager/eManager/obj
 /eManager/eManager/bin
+/eManager/eManager.Web/App_Data
