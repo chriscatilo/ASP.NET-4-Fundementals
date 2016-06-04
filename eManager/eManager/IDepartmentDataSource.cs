@@ -7,5 +7,7 @@ namespace eManager.Domain
         IQueryable<Employee> Employees { get; }
 
         IQueryable<Department> Departments { get; }
+
+        void Save();
     }
 }
