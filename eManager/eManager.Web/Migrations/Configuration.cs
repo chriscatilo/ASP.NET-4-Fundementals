@@ -6,7 +6,7 @@ namespace eManager.Web.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(eManager.Web.Infrastructure.DepartmentDb context)

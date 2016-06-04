@@ -16,9 +16,13 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
+using eManager.Web.Infrastructure;
 using StructureMap;
 using StructureMap.Graph;
-namespace eManager.Web.DependencyResolution {
+using StructureMap.Pipeline;
+
+namespace eManager.Web.DependencyResolution
+{
     public static class IoC {
         public static IContainer Initialize() {
             ObjectFactory.Initialize(x =>
@@ -28,7 +32,10 @@ namespace eManager.Web.DependencyResolution {
                                         scan.TheCallingAssembly();
                                         scan.WithDefaultConventions();
                                     });
-            //                x.For<IExample>().Use<Example>();
+
+                            x.For<IDepartmentDataSource>().Use<DepartmentDb>()
+                                .LifecycleIs<UniquePerRequestLifecycle>();
+
                         });
             return ObjectFactory.Container;
         }

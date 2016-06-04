@@ -15,14 +15,15 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+using eManager.Web.DependencyResolution;
+using StructureMap;
 using System.Web.Http;
 using System.Web.Mvc;
-using StructureMap;
-using eManager.Web.DependencyResolution;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(eManager.Web.App_Start.StructuremapMvc), "Start")]
 
-namespace eManager.Web.App_Start {
+namespace eManager.Web.App_Start
+{
     public static class StructuremapMvc {
         public static void Start() {
 			IContainer container = IoC.Initialize();

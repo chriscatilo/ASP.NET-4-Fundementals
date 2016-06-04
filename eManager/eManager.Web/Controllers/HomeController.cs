@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using eManager.Web.Infrastructure;
 using System.Web.Mvc;
 
 namespace eManager.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IDepartmentDataSource _db;
+
+        public HomeController(IDepartmentDataSource db)
+        {
+            _db = db;
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var allDepartments = _db.Departments;
+
+            return View(allDepartments);
         }
 
         public ActionResult About()

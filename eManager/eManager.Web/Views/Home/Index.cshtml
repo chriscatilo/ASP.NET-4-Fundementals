@@ -1,0 +1,14 @@
+﻿@model IEnumerable<eManager.Department>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<ul>
+    @foreach (var department in Model)
+    {
+        <li>@department.Name</li>
+    }
+</ul>

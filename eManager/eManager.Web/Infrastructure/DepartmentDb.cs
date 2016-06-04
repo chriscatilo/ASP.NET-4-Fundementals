@@ -1,6 +1,5 @@
 using eManager.Web.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
-using System;
 using System.Data.Entity;
 using System.Linq;
 
@@ -23,20 +22,8 @@ namespace eManager.Web.Infrastructure
 
         public DbSet<Department> Departments { get; set; }
 
-        IQueryable<Employee> IDepartmentDataSource.Employees
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
+        IQueryable<Employee> IDepartmentDataSource.Employees => Employees;
 
-        IQueryable<Department> IDepartmentDataSource.Departments
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
+        IQueryable<Department> IDepartmentDataSource.Departments => Departments;
     }
 }
