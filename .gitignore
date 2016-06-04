@@ -1,8 +1,10 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
+*.user
 *.suo
-/eManager/eManager/obj
-/eManager/eManager/bin
+/eManager/*/obj/*.*
+/eManager/*/bin/*.*
+/eManager/*/obj/*/*.*
+/eManager/*/bin/*/*.*
 /eManager/eManager.Web/App_Data
