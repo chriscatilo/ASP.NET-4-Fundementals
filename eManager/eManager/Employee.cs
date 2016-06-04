@@ -1,4 +1,4 @@
-﻿namespace eManager
+﻿namespace eManager.Domain
 {
     public class Employee
     {

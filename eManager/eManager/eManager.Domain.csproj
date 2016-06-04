@@ -7,8 +7,8 @@
     <ProjectGuid>{80889350-13C4-401A-97FF-301F254CED02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>eManager</RootNamespace>
-    <AssemblyName>eManager</AssemblyName>
+    <RootNamespace>eManager.Domain</RootNamespace>
+    <AssemblyName>eManager.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

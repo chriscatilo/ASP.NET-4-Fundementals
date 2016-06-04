@@ -1,3 +1,5 @@
+using eManager.Domain;
+
 namespace eManager.Web.Migrations
 {
     using System.Data.Entity.Migrations;

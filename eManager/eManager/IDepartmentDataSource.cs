@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace eManager
+namespace eManager.Domain
 {
     public interface IDepartmentDataSource
     {

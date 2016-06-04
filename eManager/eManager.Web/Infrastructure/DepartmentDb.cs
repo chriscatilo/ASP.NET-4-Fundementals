@@ -1,3 +1,4 @@
+using eManager.Domain;
 using eManager.Web.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;

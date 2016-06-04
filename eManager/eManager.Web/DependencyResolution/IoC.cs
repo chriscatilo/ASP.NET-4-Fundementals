@@ -16,6 +16,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
+using eManager.Domain;
 using eManager.Web.Infrastructure;
 using StructureMap;
 using StructureMap.Graph;

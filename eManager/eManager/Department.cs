@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace eManager
+namespace eManager.Domain
 {
     public class Department
     {

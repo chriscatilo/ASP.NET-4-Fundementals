@@ -320,9 +320,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\eManager\eManager.csproj">
+    <ProjectReference Include="..\eManager\eManager.Domain.csproj">
       <Project>{80889350-13c4-401a-97ff-301f254ced02}</Project>
-      <Name>eManager</Name>
+      <Name>eManager.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

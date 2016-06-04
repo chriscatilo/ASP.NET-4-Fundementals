@@ -1,4 +1,4 @@
-﻿using eManager.Web.Infrastructure;
+﻿using eManager.Domain;
 using System.Web.Mvc;
 
 namespace eManager.Web.Controllers
